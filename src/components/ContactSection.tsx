@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Send } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+// import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,7 +9,7 @@ const ContactSection = () => {
     subject: '',
     message: ''
   });
-  const { toast } = useToast();
+  // const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -21,11 +21,12 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. Elena will get back to you soon.",
-    });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+  //   toast({
+  //     title: "Message Sent!",
+  //     description: "Thank you for your interest. Elena will get back to you soon.",
+  //   });
+  //   setFormData({ name: '', email: '', subject: '', message: '' });
+  // };
   };
 
   const contactInfo = [
