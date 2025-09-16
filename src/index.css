@@ -123,9 +123,9 @@
 }
 
 @layer base {
-  body {
+  /* body {
     @apply bg-background text-foreground font-sans antialiased;
-  }
+  } */
 
   /* Custom artistic animations */
   @keyframes float {
@@ -153,23 +153,27 @@
 @layer components {
   /* Artistic button variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-secondary to-secondary-glow text-foreground font-medium px-8 py-4 rounded-2xl;
-    @apply hover:shadow-glow hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--secondary-glow))] text-[hsl(var(--foreground))];
+    @apply hover:scale-105 active:scale-95;
     @apply transition-all duration-300 ease-out;
+    @apply hover:shadow-[var(--shadow-glow)];
   }
 
   .btn-gallery {
-    @apply bg-primary text-primary-foreground font-medium px-6 py-3 rounded-xl;
-    @apply hover:bg-primary-glow hover:shadow-elegant hover:scale-105;
+    @apply bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] font-medium px-6 py-3 rounded-xl;
+    @apply hover:scale-105;
     @apply transition-all duration-300;
+    @apply hover:bg-[hsl(var(--primary-glow))];
+    @apply hover:shadow-[var(--shadow-elegant)];
   }
 
   /* Artwork card styles */
   .artwork-card {
-    @apply relative overflow-hidden rounded-2xl bg-card shadow-artwork;
-    @apply hover:shadow-glow hover:scale-105 cursor-pointer;
+    @apply relative overflow-hidden rounded-2xl bg-[hsl(var(--card))] shadow-[var(--shadow-artwork)];
+    @apply hover:scale-105 cursor-pointer;
     @apply transition-all duration-500 ease-out;
     animation: artwork-reveal 0.6s ease-out;
+    @apply hover:shadow-[var(--shadow-glow)];
   }
 
   .artwork-card::before {
@@ -184,13 +188,13 @@
 
   /* Artistic text effects */
   .text-artist-signature {
-    @apply text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent-coral bg-clip-text text-transparent;
+    @apply text-4xl md:text-6xl font-bold bg-gradient-to-r from-[hsl(var(--primary))] via-[hsl(var(--secondary))] to-[hsl(var(--accent-coral))] bg-clip-text text-transparent;
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
   }
 
   .text-section-title {
-    @apply text-3xl md:text-4xl font-bold text-primary mb-6;
+    @apply text-3xl md:text-4xl font-bold text-[hsl(var(--primary))] mb-6;
   }
 
   /* Floating elements */

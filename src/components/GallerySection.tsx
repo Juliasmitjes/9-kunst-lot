@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
-import artwork1 from '@/assets/artwork-1.jpg';
-import artwork2 from '@/assets/artwork-2.jpg';
-import artwork3 from '@/assets/artwork-3.jpg';
-import artwork4 from '@/assets/artwork-4.jpg';
+import artwork1 from '../assets/artwork-1.jpg';
+import artwork2 from '../assets/artwork-2.jpg';
+import artwork3 from '../assets/artwork-3.jpg';
+import artwork4 from '../assets/artwork-4.jpg';
 
 interface Artwork {
   id: number;
