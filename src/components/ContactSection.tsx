@@ -55,7 +55,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
 
         {/* header */}
-        <div className="text-center mb-16">
+        <div className="md:text-center mb-16">
           <h2 className="text-section-title">Neem contact op</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Wil je een schilderij in opdracht laten maken, een werk kopen of samenwerken?
@@ -65,7 +65,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
-            <div>
+            <div className="hidden sm:block">
               <h3 className="text-2xl font-bold text-muted-foreground mb-6">Even kennismaken?</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Of je nu een schilderij op maat wilt laten maken, een bestaand werk wilt kopen,

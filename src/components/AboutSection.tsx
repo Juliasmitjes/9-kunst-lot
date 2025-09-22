@@ -19,7 +19,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 gradient-hero">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side - Image */}
+          {/* afbeelding links */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl shadow-artwork">
               <img
@@ -31,7 +31,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Content */}
+          {/* content rechts */}
           <div className="space-y-8">
             <div>
               <h2 className=" text-3xl md:text-4xl font-bold text-muted-foreground mb-6">Over mij</h2>
@@ -53,8 +53,8 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Achievements Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            {/* groene blokken*/}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
                 <div 
                   key={index}
@@ -66,7 +66,7 @@ const AboutSection = () => {
                   <h3 className="font-bold text-xl text-foreground mb-2">
                     {achievement.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-base md:text-sm">
                     {achievement.description}
                   </p>
                 </div>
