@@ -148,7 +148,7 @@ const GallerySection = () => {
       <div className="container mx-auto px-6">
         {/* header*/}
         <div className="text-center mb-16">
-          <h2 className=" text-3xl md:text-4xl font-bold mb-6 text-muted-foreground">Schilderijen</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-muted-foreground">Schilderijen</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Bekijk een selectie van mijn schilderijen. Ik schilder in opdracht, maar zelfverzonnen taferelen. Mijn kleurgerbuik is rustig, ... 
           </p>

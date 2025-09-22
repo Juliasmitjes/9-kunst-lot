@@ -16,7 +16,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-accent/5 to-background">
+    <section id="about" className="py-20 gradient-hero">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Image */}
@@ -34,8 +34,8 @@ const AboutSection = () => {
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-section-title">Over mij</h2>
-              <div className="space-y-6 text-lg text-foreground leading-relaxed">
+              <h2 className=" text-3xl md:text-4xl font-bold text-muted-foreground mb-6">Over mij</h2>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Elena Rivera is a contemporary painter whose work bridges the gap between 
                   abstract expressionism and modern realism. Born and raised in California, 

@@ -88,7 +88,6 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Custom artist palette */
     --primary: 94 9% 55%;
     --primary-foreground: 35 30% 94%;
     --primary-glow: 94 25% 65%;
@@ -98,17 +97,17 @@
     --secondary-glow: 36 65% 75%;
 
 
-    --accent: 15 65% 50%;   
-    --accent-coral: 15 80% 65%;
-    --accent-teal: 180 35% 45%;
-    --accent-purple: 280 50% 60%;
-    --accent-gold: 45 85% 60%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --accent-warm: 10 70% 38%;       /* Diep, rijk kastanjebruin voor hover/actief */
-    --accent-light: 25 50% 70%;      /* Zachtere warme oranje-beige voor highlights */
+    --accent: 15 65% 50%; /* warm oranje */
+    --accent-coral: 15 80% 65%; /* perzik */
+    --accent-teal: 180 35% 45%; /* blauw */
+    --accent-purple: 280 50% 60%; /* paars */
+    --accent-gold: 45 85% 60%; /* geel */
+    --accent-foreground: 222.2 47.4% 11.2%; /* heel donkerblauw */
+    --accent-warm: 10 70% 38%;       /* kastanjebruin */
+    --accent-light: 25 50% 70%;      /* oranje-beige  */
 
     --muted: 30 25% 90%;          /* warme beige achtergrond, iets donkerder */
-    --muted-foreground: 25 30% 30%; /* dieper bruin foreground voor tekst */
+    --muted-foreground: 25 30% 20%; /* dieper bruin foreground voor tekst */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
