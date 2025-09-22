@@ -230,8 +230,11 @@ const GallerySection = () => {
                         {selectedArtwork.medium} • {selectedArtwork.year}
                       </p>
                     </div>
-                    <p className="text-foreground leading-relaxed">
+                    <p className="text-foreground leading-relaxed mb-4">
                       {selectedArtwork.description}
+                    </p>
+                     <p className="text-muted-foreground text-sm mb-4">
+                      {selectedArtwork.dimensions.height} × {selectedArtwork.dimensions.width}
                     </p>
                     <button
                     className="btn-gallery mt-6 cursor-pointer"
