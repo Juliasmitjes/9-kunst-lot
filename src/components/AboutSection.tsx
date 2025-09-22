@@ -37,16 +37,18 @@ const AboutSection = () => {
               <h2 className=" text-3xl md:text-4xl font-bold text-muted-foreground mb-6">Over mij</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Elena Rivera is a contemporary painter whose work bridges the gap between 
-                  abstract expressionism and modern realism. Born and raised in California, 
-                  she discovered her passion for painting at an early age and has since developed 
-                  a distinctive style that captures raw emotion through vibrant color palettes.
+                  Jaren geleden ben ik gegrepen door het schildersvak. De emotie 
+                  en liefde die ik in kunst stop, geven mij een gevoel van vrijheid. 
+                  Ik ben geboren in Zweden. In de bossen en wilde natuur. Al vroeg 
+                  maakte ik kennis met de kracht en pracht van simpel. Puur. Dat zie je
+                  terug in mijn werk. 
                 </p>
                 <p>
-                  Her artistic journey has been shaped by extensive travels and a deep connection 
-                  to nature. Elena's work explores themes of human emotion, environmental beauty, 
-                  and the subtle relationships between color and feeling. Each painting is a 
-                  meditation on the complexity of human experience.
+                  Met fijn kleurgebruik, warme of juist koele tinten en wilde penseelstreken
+                  breng ik het avontuur naar de muur. Om kennis te maken met mijn werk, vraag ik 
+                  je de tijd te nemen. Wat is er wel, maar zie je niet? Welk gevoel 
+                  krijg je bij het tafereel voor je? Roept het misschien een herinnering op?
+                  Maar bovenal: geniet! Want dáár is mijn kunst voor.
                 </p>
               </div>
             </div>
