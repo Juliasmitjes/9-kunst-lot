@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-artist-signature mb-6 leading-tight">
-            Lotta Becker
+            Charlotte Becker
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-light">
             Schilder en kunstenares

@@ -36,7 +36,7 @@ const Navigation = () => {
             className="text-2xl font-bold text-accent-warm cursor-pointer hover:text-accent/80 transition-colors"
             onClick={() => scrollToSection('hero')}
           >
-            Lotta Becker 
+            Charlotte Becker 
           </div>
 
           {/* dekstop navigatie */}
