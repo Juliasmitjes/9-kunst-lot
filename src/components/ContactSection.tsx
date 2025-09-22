@@ -66,7 +66,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div className="hidden sm:block">
-              <h3 className="text-2xl font-bold text-muted-foreground mb-6">Even kennismaken?</h3>
+              <h3 className="text-2xl font-bold text-muted-foreground mb-6">Kennismaken?</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Of je nu een schilderij op maat wilt laten maken, een bestaand werk wilt kopen,
                 of gewoon over kunst wilt praten: ik vind het altijd leuk om in contact te komen met andere kunstliefhebbers.
