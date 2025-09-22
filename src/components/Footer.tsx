@@ -1,4 +1,4 @@
-import { Heart, Instagram, Mail, Palette } from 'lucide-react';
+import { Heart, Phone, Mail, Palette } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,31 +8,32 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12 relative overflow-hidden">
+    <footer className="bg-accent-warm text-primary-foreground py-12 relative overflow-hidden">
       <div className="container mx-auto px-6 relative">
         <div className="grid md:grid-cols-3 gap-8 items-center">
-          {/* Left - Brand */}
+
+          {/* links */}
           <div className="text-center md:text-left">
             <button 
               onClick={scrollToTop}
               className="inline-flex items-center space-x-2 text-2xl font-bold hover:text-secondary-glow transition-colors"
             >
               <Palette className="w-8 h-8" />
-              <span>Elena Rivera</span>
+              <span>Charlotte Becker</span>
             </button>
             <p className="mt-2 text-primary-foreground/70">
-              Contemporary Painter & Visual Artist
+              Schilder en kunstenares
             </p>
           </div>
 
           {/* Center - Social Links */}
           <div className="flex justify-center space-x-6">
             <a 
-              href="#" 
+              href="tel:+15551234567" 
               className="p-3 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 hover:scale-110 transition-all duration-300"
-              aria-label="Instagram"
+              aria-label="Telefoon"
             >
-              <Instagram className="w-6 h-6" />
+              <Phone className="w-6 h-6" />
             </a>
             <a 
               href="mailto:elena@elenarivera.art" 
@@ -46,12 +47,11 @@ const Footer = () => {
           {/* Right - Copyright */}
           <div className="text-center md:text-right">
             <p className="text-primary-foreground/70 text-sm">
-              © {currentYear} Elena Rivera. All rights reserved.
+              © {currentYear} Charlotte Becker. Alle rechten voorbehouden.
             </p>
             <p className="text-primary-foreground/50 text-xs mt-1 flex items-center justify-center md:justify-end space-x-1">
-              <span>Made with</span>
+              <span>Gemaakt met aandacht</span>
               <Heart className="w-3 h-3 fill-current" />
-              <span>for art lovers</span>
             </p>
           </div>
         </div>
@@ -64,7 +64,6 @@ const Footer = () => {
               <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-primary-foreground transition-colors">Cookie Policy</a>
             </div>
-            <p>San Francisco, California</p>
           </div>
         </div>
       </div>

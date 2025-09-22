@@ -50,7 +50,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="text-muted-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 {item.label}
               </button>

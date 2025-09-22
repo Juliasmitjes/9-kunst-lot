@@ -84,7 +84,7 @@ const ContactSection = () => {
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">{info.title}</h4>
+                    <h4 className="font-semibold text-muted-foreground">{info.title}</h4>
                     {info.href ? (
                       <a 
                         href={info.href}
