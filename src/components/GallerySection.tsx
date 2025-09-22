@@ -44,7 +44,7 @@ const artworks: Artwork[] = [
     title: "minus 17 gr. C", 
     medium: "Acryl",
     year: "2025",
-    description: "Een woest werk dat mooi staat in een rustige ruimte.",
+    description: "Een woest werk dat mooi past in een rustige ruimte.",
     image: artwork2,
     category: "Landschap",
     dimensions: {
@@ -56,12 +56,12 @@ const artworks: Artwork[] = [
 
   {
     id: 3,
-    title: "Bloemen",
-    medium: "Olieverf", 
+    title: "Zomerdag",
+    medium: "Acryl", 
     year: "2019",
-    description: "Mooie bloemen vullen de kamer met vrolijkheid.",
+    description: "Fijne kleuren vullen de kamer met vrolijkheid.",
     image: artwork3,
-    category: "Stilleven",
+    category: "Landschap",
      dimensions: {
       height: '180 cm',
       width: '120 cm', 
@@ -71,10 +71,10 @@ const artworks: Artwork[] = [
 
   {
     id: 4,
-    title: "Zweden",
-    medium: "Mixed Media",
+    title: "Plezier",
+    medium: "Touw en olieverf",
     year: "2023", 
-    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    description: "Vrolijke, speelse kleuren en vormen.",
     image: artwork4,
     category: "Portrtret",
      dimensions: {
@@ -86,10 +86,10 @@ const artworks: Artwork[] = [
 
     {
     id: 5,
-    title: "Zweden",
-    medium: "Mixed Media",
-    year: "2023", 
-    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    title: "Strand",
+    medium: "Acryl",
+    year: "2010", 
+    description: "Een vrolijk beeld met spetterende kleuren.",
     image: artwork5,
     category: "Portrtret",
      dimensions: {
@@ -101,12 +101,12 @@ const artworks: Artwork[] = [
 
     {
     id: 6,
-    title: "Zweden",
-    medium: "Mixed Media",
-    year: "2023", 
+    title: "Bomen",
+    medium: "Olieverf",
+    year: "2020", 
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork6,
-    category: "Portrtret",
+    category: "Landschap",
      dimensions: {
       height: '180 cm',
       width: '120 cm', 
@@ -116,12 +116,12 @@ const artworks: Artwork[] = [
 
     {
     id: 7,
-    title: "Zweden",
-    medium: "Mixed Media",
-    year: "2023", 
-    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    title: "Bloemen",
+    medium: "Acryl",
+    year: "2025", 
+    description: "Een fantastierijk tafereel van natuurlijke, rustige kleuren.",
     image: artwork7,
-    category: "Portrtret",
+    category: "Stilleven",
      dimensions: {
       height: '180 cm',
       width: '120 cm', 
