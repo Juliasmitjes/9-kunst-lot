@@ -18,37 +18,37 @@ interface Artwork {
 const artworks: Artwork[] = [
   {
     id: 1,
-    title: "Emotional Resonance",
-    medium: "Oil on Canvas",
+    title: "Kleur en goud",
+    medium: "Olieverf",
     year: "2024",
-    description: "An exploration of raw emotion through bold brushstrokes and vibrant color harmonies.",
+    description: "Kleurgebruik en goude tinten geven dit tafereel een warme gloed.",
     image: artwork1,
     category: "Abstract"
   },
   {
     id: 2,
-    title: "Serene Horizons", 
-    medium: "Acrylic on Canvas",
-    year: "2024",
-    description: "A contemplative landscape that captures the quiet beauty of nature's gentle transitions.",
+    title: "Landschap", 
+    medium: "Acryl",
+    year: "2025",
+    description: "Een rustig werk dat mooi hangt in een woonkamer of keuken.",
     image: artwork2,
     category: "Landschap"
   },
   {
     id: 3,
-    title: "Garden Symphony",
-    medium: "Oil on Canvas", 
-    year: "2023",
-    description: "A celebration of life and beauty through the timeless subject of flowers.",
+    title: "Bloemen",
+    medium: "Olieverf", 
+    year: "2019",
+    description: "Mooie bloemen vullen de kamer met vrolijkheid.",
     image: artwork3,
-    category: "Stil leven"
+    category: "Stilleven"
   },
   {
     id: 4,
-    title: "Inner Light",
+    title: "Zweden",
     medium: "Mixed Media",
     year: "2023", 
-    description: "A contemporary portrait exploring the depths of human emotion and connection.",
+    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork4,
     category: "Portrtret"
   }
@@ -56,13 +56,14 @@ const artworks: Artwork[] = [
 
 const GallerySection = () => {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('Alle');
 
   const categories = ['Alle', 'Abstract', 'Landschap', 'Stilleven', 'Portret'];
 
   const filteredArtworks = filter === 'Alle' 
     ? artworks 
     : artworks.filter(artwork => artwork.category === filter);
+    
 
   return (
     <section id="gallery" className="py-20 bg-gradient-to-b from-background to-accent/5">
@@ -92,7 +93,7 @@ const GallerySection = () => {
           ))}
         </div>
 
-        {/* Gallery Grid */}
+        {/* gallerij grid*/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredArtworks.map((artwork, index) => (
             <div
@@ -120,7 +121,7 @@ const GallerySection = () => {
           ))}
         </div>
 
-        {/* Modal */}
+        {/* Ingezoomd */}
         {selectedArtwork && (
           <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
             <div className="bg-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-glow">
@@ -129,7 +130,7 @@ const GallerySection = () => {
                   onClick={() => setSelectedArtwork(null)}
                   className="absolute top-4 right-4 z-10 p-2 bg-background/80 backdrop-blur-sm rounded-full hover:bg-background transition-colors"
                 >
-                  <X className="w-6 h-6" />
+                  <X className="w-6 h- cursor-pointer" />
                 </button>
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative">
@@ -154,9 +155,17 @@ const GallerySection = () => {
                     <p className="text-foreground leading-relaxed">
                       {selectedArtwork.description}
                     </p>
-                    <button className="btn-gallery mt-6">
-                      Inquire About This Piece
-                    </button>
+                    <button
+                    className="btn-gallery mt-6 cursor-pointer"
+                    onClick={() => {
+                      setSelectedArtwork(null); 
+                      document
+                        .getElementById("contact")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Informeer naar dit stuk
+                  </button>
                   </div>
                 </div>
               </div>
