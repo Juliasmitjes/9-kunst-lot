@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import {Button} from "../components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,15 +32,15 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* naam linksboven */}
           <div 
             className="text-2xl font-bold text-primary cursor-pointer hover:text-primary-glow transition-colors"
             onClick={() => scrollToSection('hero')}
           >
-            Elena Rivera
+            Lotta Becker 
           </div>
 
-          {/* Desktop Navigation */}
+          {/* dekstop navigatie */}
           <div className="hidden md:flex space-x-8">
             {[
               { label: 'Home', id: 'hero' },
@@ -47,13 +48,14 @@ const Navigation = () => {
               { label: 'About', id: 'about' },
               { label: 'Contact', id: 'contact' },
             ].map((item) => (
-              <button
+              <Button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className="text-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105"
+                variant="default"
               >
                 {item.label}
-              </button>
+              </Button>
             ))}
           </div>
 
