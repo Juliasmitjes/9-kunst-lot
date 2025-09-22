@@ -217,13 +217,6 @@
 
 @layer components {
 
-  .btn-hero {
-    @apply bg-gradient-to-r from-[hsl(var(--secondary))] to-[hsl(var(--secondary-glow))] text-[hsl(var(--foreground))];
-    @apply hover:scale-105 active:scale-95;
-    @apply transition-all duration-300 ease-out;
-    @apply hover:shadow-[var(--shadow-glow)];
-  }
-
   .btn-gallery {
     @apply bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] font-medium px-6 py-3 rounded-xl;
     @apply hover:scale-105;

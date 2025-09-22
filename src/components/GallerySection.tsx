@@ -31,7 +31,7 @@ const artworks: Artwork[] = [
     year: "2024",
     description: "Warme tinten geven dit vrolijke tafereel een gezellige sfeer.",
     image: artwork1,
-    category: "Landschap",
+    category: "Abstract",
     dimensions: {
       height: '180 cm',
       width: '120 cm', 
@@ -76,7 +76,7 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "Vrolijke, speelse kleuren en vormen.",
     image: artwork4,
-    category: "Portrtret",
+    category: "Abstract",
      dimensions: {
       height: '180 cm',
       width: '120 cm', 
@@ -91,7 +91,7 @@ const artworks: Artwork[] = [
     year: "2010", 
     description: "Een vrolijk beeld met spetterende kleuren.",
     image: artwork5,
-    category: "Portrtret",
+    category: "Portret",
      dimensions: {
       height: '180 cm',
       width: '120 cm', 
@@ -237,7 +237,7 @@ const GallerySection = () => {
                       {selectedArtwork.dimensions.height} × {selectedArtwork.dimensions.width}
                     </p>
                     <button
-                    className="btn-gallery mt-6 cursor-pointer"
+                    className="btn-gallery mt-6 cursor-pointer text-[hsl(var(--secondary-foreground))] "
                     onClick={() => {
                       setSelectedArtwork(null); 
                       document
