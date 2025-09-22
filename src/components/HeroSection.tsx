@@ -23,7 +23,7 @@ const HeroSection = () => {
             Charlotte Becker
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            Schilder en kunstenares
+            Kunstschilder
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Mijn werken bestaan uit portretten, landschappen en kleurrijke taferelen. Ik exposeer regelmatig op verschillende locaties in Amsterdam. 

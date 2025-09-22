@@ -22,7 +22,7 @@ const Footer = () => {
               <span>Charlotte Becker</span>
             </button>
             <p className="mt-2 text-primary-foreground/70">
-              Schilder en kunstenares
+              Kunstschilder
             </p>
           </div>
 
