@@ -32,7 +32,7 @@ const artworks: Artwork[] = [
     year: "2024",
     description: "A contemplative landscape that captures the quiet beauty of nature's gentle transitions.",
     image: artwork2,
-    category: "Landscape"
+    category: "Landschap"
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const artworks: Artwork[] = [
     year: "2023",
     description: "A celebration of life and beauty through the timeless subject of flowers.",
     image: artwork3,
-    category: "Still Life"
+    category: "Stil leven"
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "A contemporary portrait exploring the depths of human emotion and connection.",
     image: artwork4,
-    category: "Portrait"
+    category: "Portrtret"
   }
 ];
 
@@ -58,34 +58,33 @@ const GallerySection = () => {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'Abstract', 'Landscape', 'Still Life', 'Portrait'];
+  const categories = ['Alle', 'Abstract', 'Landschap', 'Stilleven', 'Portret'];
 
-  const filteredArtworks = filter === 'All' 
+  const filteredArtworks = filter === 'Alle' 
     ? artworks 
     : artworks.filter(artwork => artwork.category === filter);
 
   return (
     <section id="gallery" className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="container mx-auto px-6">
-        {/* Section Header */}
+        {/* header*/}
         <div className="text-center mb-16">
-          <h2 className="text-section-title">Featured Artwork</h2>
+          <h2 className="text-section-title">Schilderijen</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A curated selection of my latest works, each piece representing a unique journey 
-            of creative expression and emotional discovery.
+            Bekijk een selectie van mijn schilderijen. Ik schilder in opdracht, maar zelfverzonnen taferelen. Mijn kleurgerbuik is rustig, ... 
           </p>
         </div>
 
-        {/* Category Filter */}
+        {/* filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`px-6 py-2 rounded-full font-medium transition-all cursor-pointer duration-300 ${
                 filter === category
                   ? 'bg-primary text-primary-foreground shadow-elegant'
-                  : 'bg-accent text-accent-foreground hover:bg-primary/20 hover:scale-105'
+                  : 'bg-accent text-accent-foreground hover:bg-accent/60 hover:scale-105'
               }`}
             >
               {category}
