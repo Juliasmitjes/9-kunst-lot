@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.font-handwritten {
+  font-family: 'i Imbang', sans-serif;                                        
+}
+
 /* gradients */
 
 .gradient-hero{
