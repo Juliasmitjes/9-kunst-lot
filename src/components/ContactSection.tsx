@@ -73,16 +73,21 @@ const ContactSection = () => {
               </p>
             </div>
 
-            {/* Contact Info Cards */}
+            {/* informatie blokken */}
             <div className="space-y-4">
               {contactInfo.map((info, index) => (
                 <div 
                   key={index}
                   className="flex items-center space-x-4 p-4 bg-card rounded-xl shadow-elegant hover:shadow-glow transition-all duration-300"
                 >
-                  <div className="text-primary">
-                    {info.icon}
-                  </div>
+                  {info.href ? (
+                    <a href={info.href} className="text-primary hover:text-primary/80 hover:scale-110 transition-all duration-300">
+                      {info.icon}
+                    </a>
+                  ) : (
+                    <div className="text-primary">{info.icon}</div>
+                  )}
+
                   <div>
                     <h4 className="font-semibold text-muted-foreground">{info.title}</h4>
                     {info.href ? (
@@ -101,7 +106,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* contactformulier */}
           <div className="bg-card p-8 rounded-2xl shadow-artwork">
             <h3 className="text-2xl font-bold text-muted-foreground mb-6">Stuur mij een bericht</h3>
             
