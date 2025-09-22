@@ -9,13 +9,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground py-12 relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-20 h-20 border border-current rounded-full" />
-        <div className="absolute bottom-20 right-20 w-16 h-16 border border-current rounded-full" />
-        <div className="absolute top-1/2 left-1/4 w-12 h-12 border border-current rounded-full" />
-      </div>
-
       <div className="container mx-auto px-6 relative">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Left - Brand */}

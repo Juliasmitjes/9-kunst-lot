@@ -48,12 +48,6 @@ const ContactSection = () => {
       details: "San Francisco, CA",
       href: null
     },
-    {
-      icon: <Instagram className="w-6 h-6" />,
-      title: "Instagram",
-      details: "@elenarivera.art", 
-      href: "#"
-    }
   ];
 
   return (

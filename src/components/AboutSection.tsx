@@ -4,24 +4,14 @@ import artistPhoto from '../assets/artist-photo.jpg';
 const AboutSection = () => {
   const achievements = [
     {
-      icon: <Award className="w-8 h-8" />,
-      title: "15+ Awards",
-      description: "Recognition for contemporary art excellence"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "200+ Collectors",
-      description: "Artwork in private collections worldwide"
-    },
-    {
       icon: <Palette className="w-8 h-8" />,
-      title: "8 Years",
-      description: "Professional painting experience"
+      title: "10 jaar",
+      description: "Ervaring in de schilderkunst"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "50+ Exhibitions",
-      description: "Solo and group shows internationally"
+      title: "10+ tentoonstellingen",
+      description: "Indivudele- en groepstentoonstellingen in en rondom Amsterdam"
     }
   ];
 
@@ -39,16 +29,12 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
             </div>
-            
-            {/* Floating accent elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent-coral rounded-full float-gentle opacity-60" />
-            <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-accent-teal rounded-full float-delayed opacity-50" />
           </div>
 
           {/* Right Side - Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-section-title">About Elena</h2>
+              <h2 className="text-section-title">Over mij</h2>
               <div className="space-y-6 text-lg text-foreground leading-relaxed">
                 <p>
                   Elena Rivera is a contemporary painter whose work bridges the gap between 
@@ -61,10 +47,6 @@ const AboutSection = () => {
                   to nature. Elena's work explores themes of human emotion, environmental beauty, 
                   and the subtle relationships between color and feeling. Each painting is a 
                   meditation on the complexity of human experience.
-                </p>
-                <p>
-                  When she's not painting, Elena teaches workshops and mentors emerging artists, 
-                  believing that art has the power to heal and connect people across all boundaries.
                 </p>
               </div>
             </div>
@@ -87,12 +69,6 @@ const AboutSection = () => {
                   </p>
                 </div>
               ))}
-            </div>
-
-            <div className="pt-4">
-              <button className="btn-hero">
-                View Full Biography
-              </button>
             </div>
           </div>
         </div>
