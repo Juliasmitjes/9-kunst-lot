@@ -16,27 +16,44 @@ interface Artwork {
   description: string;
   image: string;
   category: string;
+  dimensions: {
+    height: string;
+    width: string;
+    depth: string;
+  }
 }
 
 const artworks: Artwork[] = [
   {
     id: 1,
-    title: "Kleur en goud",
+    title: "Fantasie",
     medium: "Olieverf",
     year: "2024",
-    description: "Kleurgebruik en goude tinten geven dit tafereel een warme gloed.",
+    description: "Warme tinten geven dit vrolijke tafereel een gezellige sfeer.",
     image: artwork1,
-    category: "Abstract"
+    category: "Landschap",
+    dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
   {
     id: 2,
-    title: "Landschap", 
+    title: "minus 17 gr. C", 
     medium: "Acryl",
     year: "2025",
-    description: "Een rustig werk dat mooi hangt in een woonkamer of keuken.",
+    description: "Een woest werk dat mooi staat in een rustige ruimte.",
     image: artwork2,
-    category: "Landschap"
+    category: "Landschap",
+    dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
   {
     id: 3,
     title: "Bloemen",
@@ -44,8 +61,14 @@ const artworks: Artwork[] = [
     year: "2019",
     description: "Mooie bloemen vullen de kamer met vrolijkheid.",
     image: artwork3,
-    category: "Stilleven"
+    category: "Stilleven",
+     dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
   {
     id: 4,
     title: "Zweden",
@@ -53,8 +76,14 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork4,
-    category: "Portrtret"
+    category: "Portrtret",
+     dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
     {
     id: 5,
     title: "Zweden",
@@ -62,8 +91,14 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork5,
-    category: "Portrtret"
+    category: "Portrtret",
+     dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
     {
     id: 6,
     title: "Zweden",
@@ -71,8 +106,14 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork6,
-    category: "Portrtret"
+    category: "Portrtret",
+     dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   },
+
     {
     id: 7,
     title: "Zweden",
@@ -80,7 +121,12 @@ const artworks: Artwork[] = [
     year: "2023", 
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork7,
-    category: "Portrtret"
+    category: "Portrtret",
+     dimensions: {
+      height: '180 cm',
+      width: '120 cm', 
+      depth: '120 cm'
+  }
   }
 ];
 
@@ -98,11 +144,11 @@ const GallerySection = () => {
   return (
 
     // bg-gradient-to-b from-background to-accent/5
-    <section id="gallery" className="py-20 bg-">
+    <section id="gallery" className="py-20 bg-accent-coral">
       <div className="container mx-auto px-6">
         {/* header*/}
         <div className="text-center mb-16">
-          <h2 className="text-section-title">Schilderijen</h2>
+          <h2 className=" text-3xl md:text-4xl font-bold mb-6 text-muted-foreground">Schilderijen</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Bekijk een selectie van mijn schilderijen. Ik schilder in opdracht, maar zelfverzonnen taferelen. Mijn kleurgerbuik is rustig, ... 
           </p>
