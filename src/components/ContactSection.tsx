@@ -33,29 +33,29 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: "elena@elenarivera.art",
-      href: "mailto:elena@elenarivera.art"
+      details: "charlottebecker@hotmail.com",
+      href: "mailto:charlottebecker@hotmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Phone", 
-      details: "+1 (555) 123-4567",
+      title: "Telefoonnummer", 
+      details: "06 12345678",
       href: "tel:+15551234567"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Studio",
-      details: "San Francisco, CA",
+      title: "Atelier",
+      details: "Amsterdam",
       href: null
     },
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-background to-primary/5">
+    <section id="contact" className="py-20 bg-secondary-glow">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-section-title">Get In Touch</h2>
+          <h2 className="text-section-title">Neem contact op</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Interested in commissioning a piece, purchasing artwork, or collaborating? 
             I'd love to hear from you and discuss how we can bring your vision to life.
