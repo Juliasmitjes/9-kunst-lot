@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import {Button} from "../components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,22 +43,21 @@ const Navigation = () => {
           <div className="hidden md:flex space-x-8">
             {[
               { label: 'Home', id: 'hero' },
-              { label: 'Gallery', id: 'gallery' },
-              { label: 'About', id: 'about' },
+              { label: 'Galerij', id: 'gallery' },
+              { label: 'Over mij', id: 'about' },
               { label: 'Contact', id: 'contact' },
             ].map((item) => (
-              <Button
+              <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105"
-                variant="default"
+                className="text-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 {item.label}
-              </Button>
+              </button>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* mobiel menu NOG DOEN */}
           <button
             className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -74,8 +72,8 @@ const Navigation = () => {
             <div className="flex flex-col space-y-4 pt-4">
               {[
                 { label: 'Home', id: 'hero' },
-                { label: 'Gallery', id: 'gallery' },
-                { label: 'About', id: 'about' },
+                { label: 'Galerij', id: 'gallery' },
+                { label: 'Over mij', id: 'about' },
                 { label: 'Contact', id: 'contact' },
               ].map((item) => (
                 <button
