@@ -33,7 +33,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* naam linksboven */}
           <div 
-            className="text-2xl font-bold text-primary cursor-pointer hover:text-primary-glow transition-colors"
+            className="text-2xl font-bold text-accent-warm cursor-pointer hover:text-accent/80 transition-colors"
             onClick={() => scrollToSection('hero')}
           >
             Lotta Becker 

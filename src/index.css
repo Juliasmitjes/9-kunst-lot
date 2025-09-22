@@ -67,7 +67,7 @@
 
   /* text met effecten */
   .text-artist-signature {
-    @apply text-4xl md:text-6xl font-bold bg-gradient-to-r from-[hsl(var(--primary))] via-[hsl(var(--secondary))] to-[hsl(var(--accent-coral))] bg-clip-text text-transparent;
+    @apply text-4xl md:text-6xl font-bold bg-gradient-to-r from-[hsl(var(--accent-warm))] to-[hsl(var(--secondary))] bg-clip-text text-transparent;
     background-size: 200% 100%;
   }
 
@@ -97,7 +97,7 @@
     --secondary-foreground: 222.2 84% 4.9%;
     --secondary-glow: 36 65% 75%;
 
-    
+
     --accent: 15 65% 50%;   
     --accent-coral: 15 80% 65%;
     --accent-teal: 180 35% 45%;
@@ -107,8 +107,8 @@
     --accent-warm: 10 70% 38%;       /* Diep, rijk kastanjebruin voor hover/actief */
     --accent-light: 25 50% 70%;      /* Zachtere warme oranje-beige voor highlights */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 25% 90%;          /* warme beige achtergrond, iets donkerder */
+    --muted-foreground: 25 30% 30%; /* dieper bruin foreground voor tekst */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
