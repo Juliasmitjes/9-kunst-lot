@@ -58,9 +58,9 @@ const AboutSection = () => {
               {achievements.map((achievement, index) => (
                 <div 
                   key={index}
-                  className="bg-card p-6 rounded-xl shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105"
+                  className="bg-primary p-6 rounded-xl shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105"
                 >
-                  <div className="text-primary mb-3">
+                  <div className="text-accent-warm mb-3">
                     {achievement.icon}
                   </div>
                   <h3 className="font-bold text-xl text-foreground mb-2">
