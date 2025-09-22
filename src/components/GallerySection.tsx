@@ -4,6 +4,9 @@ import artwork1 from '../assets/artwork-1.jpg';
 import artwork2 from '../assets/artwork-2.jpg';
 import artwork3 from '../assets/artwork-3.jpg';
 import artwork4 from '../assets/artwork-4.jpg';
+import artwork5 from '../assets/artwork-5.jpg';
+import artwork6 from '../assets/artwork-6.jpg';
+import artwork7 from '../assets/artwork-7.png';
 
 interface Artwork {
   id: number;
@@ -51,6 +54,33 @@ const artworks: Artwork[] = [
     description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
     image: artwork4,
     category: "Portrtret"
+  },
+    {
+    id: 5,
+    title: "Zweden",
+    medium: "Mixed Media",
+    year: "2023", 
+    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    image: artwork5,
+    category: "Portrtret"
+  },
+    {
+    id: 6,
+    title: "Zweden",
+    medium: "Mixed Media",
+    year: "2023", 
+    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    image: artwork6,
+    category: "Portrtret"
+  },
+    {
+    id: 7,
+    title: "Zweden",
+    medium: "Mixed Media",
+    year: "2023", 
+    description: "Een stilleven, dat doet denken aan het Zweden van vroeger.",
+    image: artwork7,
+    category: "Portrtret"
   }
 ];
 
@@ -66,7 +96,9 @@ const GallerySection = () => {
     
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-background to-accent/5">
+
+    // bg-gradient-to-b from-background to-accent/5
+    <section id="gallery" className="py-20 bg-">
       <div className="container mx-auto px-6">
         {/* header*/}
         <div className="text-center mb-16">
