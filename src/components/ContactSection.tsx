@@ -53,23 +53,23 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 bg-secondary-glow">
       <div className="container mx-auto px-6">
-        {/* Section Header */}
+
+        {/* header */}
         <div className="text-center mb-16">
           <h2 className="text-section-title">Neem contact op</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Interested in commissioning a piece, purchasing artwork, or collaborating? 
-            I'd love to hear from you and discuss how we can bring your vision to life.
+            Wil je een schilderij in opdracht laten maken, een werk kopen of samenwerken?
+            Leuk! Ik denk graag met je mee.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-bold text-muted-foreground mb-6">Even kennismaken?</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Whether you're looking to commission a custom piece, purchase existing artwork, 
-                or simply want to discuss art, I'm always excited to connect with fellow art lovers.
+                Of je nu een schilderij op maat wilt laten maken, een bestaand werk wilt kopen,
+                of gewoon over kunst wilt praten: ik vind het altijd leuk om in contact te komen met andere kunstliefhebbers.
               </p>
             </div>
 
@@ -99,28 +99,17 @@ const ContactSection = () => {
                 </div>
               ))}
             </div>
-
-            {/* Services */}
-            <div className="p-6 bg-gradient-coral rounded-xl text-white">
-              <h4 className="font-bold text-xl mb-4">Services</h4>
-              <ul className="space-y-2 text-white/90">
-                <li>• Custom Portraits & Landscapes</li>
-                <li>• Corporate Art Commissions</li>
-                <li>• Art Consultation & Curation</li>
-                <li>• Private Painting Workshops</li>
-              </ul>
-            </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-card p-8 rounded-2xl shadow-artwork">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-bold text-muted-foreground mb-6">Stuur mij een bericht</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Name *
+                  <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
+                    Naam *
                   </label>
                   <input
                     type="text"
@@ -129,12 +118,12 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="Your name"
+                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    placeholder="Je naam"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
                     Email *
                   </label>
                   <input
@@ -144,15 +133,15 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    placeholder="jouw@email.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  Subject *
+                <label htmlFor="subject" className="block text-sm font-medium text-mmuted-foreground mb-2">
+                  Onderwerp *
                 </label>
                 <select
                   id="subject"
@@ -160,20 +149,19 @@ const ContactSection = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="commission">Commission Request</option>
-                  <option value="purchase">Purchase Inquiry</option>
-                  <option value="exhibition">Exhibition Opportunity</option>
-                  <option value="workshop">Workshop Inquiry</option>
-                  <option value="other">Other</option>
+                  <option value="">Kies een onderwerp</option>
+                  <option value="commission">Opdracht aanvragen</option>
+                  <option value="purchase">Vraag over kunstwerk</option>
+                  <option value="exhibition">Expositie mogelijkheid</option>
+                  <option value="other">Anders</option>
                 </select>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
+                  Bericht *
                 </label>
                 <textarea
                   id="message"
@@ -182,17 +170,17 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-vertical"
-                  placeholder="Tell me about your project or inquiry..."
+                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-vertical"
+                  placeholder="Wat heb je in gedachten?"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground font-medium py-4 px-6 rounded-lg hover:bg-primary-glow hover:shadow-elegant hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-primary text-primary-foreground cursor-pointer font-medium py-4 px-6 rounded-lg hover:bg-primary-glow hover:shadow-elegant hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
-                <span>Send Message</span>
+                <span>Verstuur bericht</span>
               </button>
             </form>
           </div>
