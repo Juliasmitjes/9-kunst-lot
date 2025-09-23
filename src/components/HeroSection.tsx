@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h1 className="text-artist-signature font-handwritten mb-3 leading-tight">
             Charlotte Becker
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-bold">
             Kunstschilder
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
