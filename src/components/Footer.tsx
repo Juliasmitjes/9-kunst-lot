@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-accent-warm text-primary-foreground py-12 relative overflow-hidden">
+    <footer className="bg-accent-warm text-primary-foreground font-business py-12 relative overflow-hidden">
       <div className="container mx-auto px-6 relative">
         <div className="grid md:grid-cols-3 gap-8 items-center">
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <button 
               onClick={scrollToTop}
-              className="inline-flex items-center space-x-2 text-2xl font-bold hover:text-secondary-glow transition-colors"
+              className="inline-flex items-center space-x-2 text-2xl font-bold cursor-pointer hover:text-secondary-glow transition-colors"
             >
               <Palette className="w-8 h-8" />
               <span>Charlotte Becker</span>

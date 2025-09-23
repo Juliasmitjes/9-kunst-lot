@@ -4,6 +4,10 @@
   font-family: 'i Imbang', sans-serif;                                        
 }
 
+.font-business {
+  font-family: 'BR Segma', sans-serif;                                              
+}
+
 /* gradients */
 
 .gradient-hero{
@@ -204,6 +208,8 @@
     }
   }
 }
+
+
 
 @layer components {
 

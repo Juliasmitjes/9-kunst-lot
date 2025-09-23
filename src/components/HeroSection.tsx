@@ -22,14 +22,14 @@ const HeroSection = () => {
           <h1 className="text-artist-signature font-handwritten mb-3 leading-tight">
             Charlotte Becker
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-bold">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-bold font-business">
             Kunstschilder
           </p>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed font-business">
             Mijn werken bestaan uit portretten, landschappen en kleurrijke taferelen. Ik exposeer regelmatig op verschillende locaties in Amsterdam. 
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center font-business">
             <Button 
               variant="opps"
               size="lg"

@@ -148,8 +148,8 @@ const GallerySection = () => {
       <div className="container mx-auto px-6">
         {/* header*/}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-muted-foreground">Schilderijen</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-business font-bold mb-6 text-muted-foreground">Schilderijen</h2>
+          <p className="text-lg font-business text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Bekijk een selectie van mijn schilderijen. Ik schilder in opdracht, maar zelfverzonnen taferelen. Mijn kleurgerbuik is rustig, ... 
           </p>
         </div>
@@ -160,7 +160,7 @@ const GallerySection = () => {
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-6 py-2 rounded-full font-medium transition-all cursor-pointer duration-300 ${
+              className={`px-6 py-2 rounded-full font-business  font-medium transition-all cursor-pointer duration-300 ${
                 filter === category
                   ? 'bg-primary text-primary-foreground shadow-elegant'
                   : 'bg-accent text-accent-foreground hover:bg-accent/60 hover:scale-105'
@@ -188,8 +188,8 @@ const GallerySection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold text-lg mb-1">{artwork.title}</h3>
-                  <p className="text-sm opacity-90">{artwork.medium} • {artwork.year}</p>
+                  <h3 className="font-semibold font-business text-lg mb-1">{artwork.title}</h3>
+                  <p className="text-sm font-business  opacity-90">{artwork.medium} • {artwork.year}</p>
                 </div>
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <ZoomIn className="w-6 h-6 text-white" />
@@ -220,24 +220,24 @@ const GallerySection = () => {
                   </div>
                   <div className="p-8">
                     <div className="mb-4">
-                      <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full mb-4">
+                      <span className="inline-block px-3 py-1 bg-primary/10 font-business text-primary text-sm rounded-full mb-4">
                         {selectedArtwork.category}
                       </span>
-                      <h3 className="text-2xl font-bold text-foreground mb-2">
+                      <h3 className="text-2xl font-bold font-business text-foreground mb-2">
                         {selectedArtwork.title}
                       </h3>
-                      <p className="text-muted-foreground mb-4">
+                      <p className="text-muted-foreground font-business mb-4">
                         {selectedArtwork.medium} • {selectedArtwork.year}
                       </p>
                     </div>
-                    <p className="text-foreground leading-relaxed mb-4">
+                    <p className="text-foreground font-business leading-relaxed mb-4">
                       {selectedArtwork.description}
                     </p>
-                     <p className="text-muted-foreground text-sm mb-4">
+                     <p className="text-muted-foreground font-business text-sm mb-4">
                       {selectedArtwork.dimensions.height} × {selectedArtwork.dimensions.width}
                     </p>
                     <button
-                    className="btn-gallery mt-6 cursor-pointer text-white "
+                    className="btn-gallery font-business mt-6 cursor-pointer text-white"
                     onClick={() => {
                       setSelectedArtwork(null); 
                       document

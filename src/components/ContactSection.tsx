@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 // import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -56,8 +56,8 @@ const ContactSection = () => {
 
         {/* header */}
         <div className="md:text-center mb-16">
-          <h2 className="text-section-title">Neem contact op</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-section-title font-business">Neem contact op</h2>
+          <p className="text-lg text-muted-foreground font-business max-w-2xl mx-auto leading-relaxed">
             Wil je een schilderij in opdracht laten maken, een werk kopen of samenwerken?
             Leuk! Ik denk graag met je mee.
           </p>
@@ -66,8 +66,8 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div className="hidden sm:block">
-              <h3 className="text-2xl font-bold text-muted-foreground mb-6">Kennismaken?</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+              <h3 className="text-2xl font-bold text-muted-foreground mb-6 font-business ">Kennismaken?</h3>
+              <p className="text-muted-foreground mb-8 leading-relaxed font-business ">
                 Of je nu een schilderij op maat wilt laten maken, een bestaand werk wilt kopen,
                 of gewoon over kunst wilt praten: ik vind het altijd leuk om in contact te komen met andere kunstliefhebbers.
               </p>
@@ -89,16 +89,16 @@ const ContactSection = () => {
                   )}
 
                   <div>
-                    <h4 className="font-semibold text-muted-foreground">{info.title}</h4>
+                    <h4 className="font-semibold text-muted-foreground font-business ">{info.title}</h4>
                     {info.href ? (
                       <a 
                         href={info.href}
-                        className="text-muted-foreground hover:text-primary transition-colors"
+                        className="text-muted-foreground hover:text-primary transition-colors font-business "
                       >
                         {info.details}
                       </a>
                     ) : (
-                      <p className="text-muted-foreground">{info.details}</p>
+                      <p className="text-muted-foreground ">{info.details}</p>
                     )}
                   </div>
                 </div>
@@ -108,12 +108,12 @@ const ContactSection = () => {
 
           {/* contactformulier */}
           <div className="bg-card p-8 rounded-2xl shadow-artwork">
-            <h3 className="text-2xl font-bold text-muted-foreground mb-6">Stuur mij een bericht</h3>
+            <h3 className="text-2xl font-bold text-muted-foreground mb-6 font-business ">Stuur mij een bericht</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
+                  <label htmlFor="name" className="block text-sm font-business  font-medium text-muted-foreground mb-2">
                     Naam *
                   </label>
                   <input
@@ -123,12 +123,12 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-border font-business rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     placeholder="Je naam"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-business font-medium text-muted-foreground mb-2">
                     Email *
                   </label>
                   <input
@@ -138,14 +138,14 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-border font-business rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                     placeholder="jouw@email.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-mmuted-foreground mb-2">
+                <label htmlFor="subject" className="block text-sm font-business font-medium text-mmuted-foreground mb-2">
                   Onderwerp *
                 </label>
                 <select
@@ -154,7 +154,7 @@ const ContactSection = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-border font-business rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                 >
                   <option value="">Kies een onderwerp</option>
                   <option value="commission">Opdracht aanvragen</option>
@@ -165,7 +165,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
+                <label htmlFor="message" className="block text-sm font-medium font-business text-muted-foreground mb-2">
                   Bericht *
                 </label>
                 <textarea
@@ -175,14 +175,14 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-vertical"
+                  className="w-full px-4 py-3 border border-border rounded-lg font-business bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-vertical"
                   placeholder="Wat heb je in gedachten?"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground cursor-pointer font-medium py-4 px-6 rounded-lg hover:bg-primary-glow hover:shadow-elegant hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-primary text-primary-foreground cursor-pointer font-business font-medium py-4 px-6 rounded-lg hover:bg-primary-glow hover:shadow-elegant hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
                 <span>Verstuur bericht</span>

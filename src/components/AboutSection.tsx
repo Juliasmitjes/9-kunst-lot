@@ -24,7 +24,7 @@ const AboutSection = () => {
             <div className="relative overflow-hidden rounded-3xl shadow-artwork">
               <img
                 src={artistPhoto}
-                alt="Elena Rivera in her studio"
+                alt="Charlotte Becker"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
@@ -34,8 +34,8 @@ const AboutSection = () => {
           {/* content rechts */}
           <div className="space-y-8">
             <div>
-              <h2 className=" text-3xl md:text-4xl font-bold text-muted-foreground mb-6">Over mij</h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <h2 className=" text-3xl md:text-4xl font-bold font-business text-muted-foreground mb-6">Over mij</h2>
+              <div className="space-y-6 text-lg text-muted-foreground font-business leading-relaxed">
                 <p>
                   Jaren geleden ben ik gegrepen door het schildersvak. De emotie 
                   en liefde die ik in kunst stop, geven mij een gevoel van vrijheid. 
@@ -63,10 +63,10 @@ const AboutSection = () => {
                   <div className="text-accent-warm mb-3">
                     {achievement.icon}
                   </div>
-                  <h3 className="font-bold text-xl text-foreground mb-2">
+                  <h3 className="font-bold font-business text-xl text-foreground mb-2">
                     {achievement.title}
                   </h3>
-                  <p className="text-muted-foreground text-base md:text-sm">
+                  <p className="text-muted-foreground font-business text-base md:text-sm">
                     {achievement.description}
                   </p>
                 </div>

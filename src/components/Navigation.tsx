@@ -33,7 +33,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* naam linksboven */}
           <div 
-            className="text-2xl font-bold text-accent-warm cursor-pointer hover:text-accent/80 transition-colors"
+            className="text-2xl font-bold font-business text-accent-warm cursor-pointer hover:text-accent/80 transition-colors"
             onClick={() => scrollToSection('hero')}
           >
             Charlotte Becker 
@@ -50,16 +50,16 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-primary font-medium transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="text-muted-foreground hover:text-primary font-business font-semibold transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
           </div>
 
-          {/* mobiel menu NOG DOEN */}
+          {/* mobiel menu */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="md:hidden p-2 font-business text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -79,7 +79,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-foreground hover:text-primary font-medium transition-colors py-2"
+                  className="text-left font-business text-foreground hover:text-primary font-semibold transition-colors py-2"
                 >
                   {item.label}
                 </button>
